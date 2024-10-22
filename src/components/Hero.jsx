@@ -15,7 +15,7 @@ const Hero = () => {
             deals, winning clients, and expanding accounts, all while staying on
             brand.
           </p>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex md:flex-row flex-col items-center justify-center gap-3">
             <Button text="Get Started For Free" variant="primary" />
             <Button text="Explore Plans" variant="secondary" />
           </div>
