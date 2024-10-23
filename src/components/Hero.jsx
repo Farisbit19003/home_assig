@@ -7,10 +7,10 @@ const Hero = () => {
     <div>
       <div className="bg-[url('https://res.cloudinary.com/dc367rgig/image/upload/v1729619790/patrick-hendry-rGoxQdG6GXc-unsplash_iljtmn.jpg')] bg-fixed h-screen bg-center p-2 bg-cover md:w-full bg-no-repeat ">
         <div className="text-center p-2 flex items-center justify-center flex-col gap-3">
-          <h1 className="font-sans text-white md:text-7xl font-semibold text-4xl">
+          <h1 className="font-sans text-[#f2f2f2] md:text-7xl font-semibold text-4xl">
             Win more deals. <br /> Pitch.
           </h1>
-          <p className="md:w-[42%] text-white md:leading-9">
+          <p className="md:w-[42%] text-[#f2f2f2] md:leading-9">
             Pitch turns presentations into your team's superpower for closing
             deals, winning clients, and expanding accounts, all while staying on
             brand.
