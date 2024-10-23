@@ -14,8 +14,8 @@ const Tabs = () => {
   return (
     <div className="mt-5">
       {/* Tabs Container */}
-      <div className="flex gap-1 whitespace-nowrap">
-        <div className="overflow-scroll overflow-x-auto flex">
+      <div className="flex gap-1 whitespace-nowrap ">
+        <div className="overflow-x-auto overflow-hidden flex">
           {" "}
           {tabs.map((tab) => (
             <button
