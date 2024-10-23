@@ -13,15 +13,15 @@ const Tabs = () => {
 
   return (
     <>
-      <div className="mt-5">
+      <div className="md:mt-12 mt-6">
         {/* Tabs Container */}
-        <div className="flex gap-1 whitespace-nowrap ">
-          <div className="overflow-x-auto overflow-hidden flex">
+        <div className="flex whitespace-nowrap ">
+          <div className="overflow-x-auto overflow-hidden md:gap-8 gap-1 flex">
             {" "}
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                className={`flex items-center justify-center space-x-2 font-sans px-1 md:px-2 py-2 w-fit md:text-base text-sm  ${
+                className={`flex items-center uppercase justify-center space-x-2 font-sans px-1 md:px-2 py-2 w-fit md:text-base text-sm  ${
                   activeTab === tab.id
                     ? "border-b-2 text-[#f2f2f2]"
                     : "text-[#f2f2f2]"
@@ -36,7 +36,7 @@ const Tabs = () => {
         </div>
       </div>
       {/* Content for Active Tab */}
-      <div className="mt-4 p-4 md:w-8/12 w-full   border rounded-lg flex items-center justify-center bg-[#f2f2f2] text-black font-sans">
+      <div className="mt-4 p-4 md:w-10/12 md:text-2xl w-full border rounded-lg flex items-center justify-center md:font-semibold bg-[#f2f2f2] text-black font-sans">
         {activeTab === "design" && <p>Content for Design tab.</p>}
         {activeTab === "collaborate" && <p>Content for Collaborate tab.</p>}
         {activeTab === "convert" && <p>Content for Convert tab.</p>}
