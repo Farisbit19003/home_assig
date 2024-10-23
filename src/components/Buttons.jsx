@@ -11,12 +11,14 @@ const Button = ({ text, variant, onClick }) => {
   }
 
   return (
-    <input
-      type="button"
-      value={text}
-      onClick={onClick}
-      className={buttonClasses}
-    />
+    <>
+      <input
+        type="button"
+        value={text}
+        onClick={onClick}
+        className={buttonClasses}
+      />
+    </>
   );
 };
 

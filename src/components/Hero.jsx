@@ -4,8 +4,8 @@ import Tabs from "./Tabs";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="bg-[url('https://res.cloudinary.com/dc367rgig/image/upload/v1729619790/patrick-hendry-rGoxQdG6GXc-unsplash_iljtmn.jpg')] bg-fixed h-screen bg-center p-2 bg-cover md:w-full bg-no-repeat ">
+    <>
+      <div>
         <div className="text-center p-2 flex items-center justify-center flex-col gap-3">
           <h1 className="font-sans text-[#f2f2f2] md:text-7xl font-semibold text-4xl">
             Win more deals. <br /> Pitch.
@@ -22,7 +22,7 @@ const Hero = () => {
           <Tabs/>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
