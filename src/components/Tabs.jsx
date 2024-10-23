@@ -36,7 +36,7 @@ const Tabs = () => {
         </div>
       </div>
       {/* Content for Active Tab */}
-      <div className="mt-4 p-4 w-8/12   border rounded-lg flex items-center justify-center bg-[#f2f2f2] text-black font-sans">
+      <div className="mt-4 p-4 md:w-8/12 w-full   border rounded-lg flex items-center justify-center bg-[#f2f2f2] text-black font-sans">
         {activeTab === "design" && <p>Content for Design tab.</p>}
         {activeTab === "collaborate" && <p>Content for Collaborate tab.</p>}
         {activeTab === "convert" && <p>Content for Convert tab.</p>}
