@@ -13,22 +13,25 @@ const Tabs = () => {
 
   return (
     <div className="mt-5">
-      <div className="flex md:space-x-4 space-x-1 ">
+      {/* Tabs Container */}
+      <div className="flex overflow-x-auto whitespace-nowrap scrollbar-hide">
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`flex items-center md:overflow-hidden overflow-x-auto space-x-1 md:space-x-2 px-4 py-2 ${
+            className={`md:flex items-center space-x-2 px-4 py-2 min-w-max ${
               activeTab === tab.id
                 ? "border-b-2 text-white"
                 : "text-white"
             }`}
             onClick={() => setActiveTab(tab.id)}
           >
-            {tab.icon} 
+            {tab.icon}
             <span>{tab.label}</span>
           </button>
         ))}
       </div>
+
+      {/* Content for Active Tab */}
       <div className="mt-4 p-4 border rounded-lg flex items-center justify-center bg-gray-100">
         {activeTab === "design" && <p>Content for Design tab.</p>}
         {activeTab === "collaborate" && <p>Content for Collaborate tab.</p>}

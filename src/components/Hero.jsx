@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="font-sans text-white md:text-7xl font-semibold text-4xl">
             Win more deals. <br /> Pitch.
           </h1>
-          <p className="w-[42%] text-white md:leading-9">
+          <p className="md:w-[42%] text-white md:leading-9">
             Pitch turns presentations into your team's superpower for closing
             deals, winning clients, and expanding accounts, all while staying on
             brand.
