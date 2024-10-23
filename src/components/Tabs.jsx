@@ -32,12 +32,12 @@ const Tabs = () => {
       </div>
 
       {/* Content for Active Tab */}
-      <div className="mt-4 p-4 border rounded-lg flex items-center justify-center bg-gray-100">
+      {/* <div className="mt-4 p-4 border rounded-lg flex items-center justify-center bg-gray-100">
         {activeTab === "design" && <p>Content for Design tab.</p>}
         {activeTab === "collaborate" && <p>Content for Collaborate tab.</p>}
         {activeTab === "convert" && <p>Content for Convert tab.</p>}
         {activeTab === "analyze" && <p>Content for Analyze tab.</p>}
-      </div>
+      </div> */}
     </div>
   );
 };
