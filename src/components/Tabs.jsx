@@ -15,13 +15,12 @@ const Tabs = () => {
     <>
       <div className="md:mt-12 mt-6">
         {/* Tabs Container */}
-        <div className="flex whitespace-nowrap ">
-          <div className="overflow-x-auto overflow-hidden md:gap-8 gap-1 flex">
-            {" "}
+        <div className="whitespace-nowrap">
+          <div className="overflow-x-auto flex md:gap-8 gap-2 max-w-full">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                className={`flex items-center uppercase justify-center space-x-2 font-sans px-1 md:px-2 py-2 w-fit md:text-base text-sm  ${
+                className={`flex items-center uppercase justify-center space-x-1 md:space-x-2 font-sans px-1 md:px-2 py-2 w-fit md:text-base text-xs ${
                   activeTab === tab.id
                     ? "border-b-2 text-[#f2f2f2]"
                     : "text-[#f2f2f2]"
